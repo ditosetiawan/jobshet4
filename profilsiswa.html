@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Siswa RPL</title>
+</head>
+
+<body id="halaman">
+
+    <h1>Profil Siswa RPL</h1>
+
+    <h2>Nama: Budi Santoso</h2>
+    <h3>Kelas: XI RPL 1</h3>
+
+    <p id="informasi">
+        Saya adalah siswa Rekayasa Perangkat Lunak (RPL) yang sedang
+        belajar membuat website menggunakan HTML, CSS, dan JavaScript.
+    </p>
+
+    <button id="tombolPesan">Tampilkan Pesan</button>
+    <button id="tombolWarna">Ubah Warna</button>
+    <button id="tombolReset">Reset</button>
+
+    <script>
+        const halaman = document.getElementById("halaman");
+        const informasi = document.getElementById("informasi");
+        const tombolPesan = document.getElementById("tombolPesan");
+        const tombolWarna = document.getElementById("tombolWarna");
+        const tombolReset = document.getElementById("tombolReset");
+
+        tombolPesan.addEventListener("click", function() {
+            informasi.textContent = "Halo! Saya siswa RPL yang sedang belajar JavaScript.";
+        });
+
+        tombolWarna.addEventListener("click", function() {
+            halaman.style.backgroundColor = "lightblue";
+        });
+
+        tombolReset.addEventListener("click", function() {
+            informasi.textContent = "Saya adalah siswa Rekayasa Perangkat Lunak (RPL) yang sedang belajar membuat website menggunakan HTML, CSS, dan JavaScript.";
+            halaman.style.backgroundColor = "white";
+        });
+    </script>
+
+</body>
+</html>
